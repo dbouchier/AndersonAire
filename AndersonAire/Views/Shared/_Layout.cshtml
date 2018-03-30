@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anderson Aire is a premier HVAC service and repair company in Brainerd, MN servicing the greater Brainerd / Baxter MN area.">
+    <meta name="description" content="Steve Anderson, Brainerd, MN">
+    <title>Anderson Aire - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="theme-pattern-lightmesh">
+<!-- Page Header -->
+<header id="masthead">
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <h1 class="brand">
+                    <a href="/">
+                        <img src="/images/Anderson-Aire-LOGO-SMALL.jpg" alt="Anderson Aire Heating, Cooling, and Refrigeration" />
+                    </a>
+                    
+                    @*<span><i class="icon-phone" style="margin-left: 150px;"></i><span style="margin-left: 10px;color: rgb(191, 25, 25)">218.821.3109</span></span>*@
+                </h1>
+                
+                @*<div class="" style="margin-left: 50px; margin-top: 48px">
+                    <i class="icon-phone"></i><span style="margin-left: 10px; color: rgb(191, 25, 25)">218.821.3109</span>
+                </div>*@
+                <div class="nav-collapse collapse">
+                    
+                    <ul class="nav pull-right">
+                        
+                        <li class="@ViewBag.HomeClass">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+                        <li class="@ViewBag.AboutClass">
+                            @Html.ActionLink("About", "About", "Home")
+                        </li>
+                        <li class="@ViewBag.ContactClass">
+                            @Html.ActionLink("Contact", "Contact", "Home")
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content" role="main">
+    @RenderBody()
+    
+</div>
+<!-- Page Footer -->
+<section class="section" >
+    <div class="container pull-center">
+        <img src="/images/Anderson-Aire-LOGO.gif" alt="Anderson Aire Heating, Cooling, and Refrigeration"/>
+    </div>
+</section>
+<footer class="section" id="footer" role="contentinfo">
+    
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4">
+                <h3>Contact us</h3>
+                <p>
+                    We are located in Brainerd, MN serving the greater Brainerd / Baxter MN area.
+                </p>
+                <ul class="icons">
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <a href="mailto:steve@andersonaire.com">Steve Anderson</a>
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        218.821.3109
+                    </li>
+
+                </ul>
+            </div>
+            <div class="span4">
+                <h3>Webmaster Information</h3>
+                <p>
+                    If you find any issues related to this site, please contact the web master.
+                </p>
+                <ul class="icons">
+                    <li>
+                        <li>
+                            <i class="icon-envelope"></i>
+                            <a href="mailto:dj@mnsoftwarefactory.com">Webmaster</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", false)
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.carousel').carousel({
+            interval: 4000
+        })
+    });
+</script>
+</body>
+</html>
