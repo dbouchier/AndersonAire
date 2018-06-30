@@ -149,7 +149,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\TextFile1.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css">
       <DependentUpon>bootstrap.css</DependentUpon>
@@ -165,9 +164,11 @@
     <Content Include="images\air-conditioning.jpg" />
     <Content Include="images\Anderson-Aire-LOGO-SMALL.jpg" />
     <Content Include="images\Anderson-Aire-LOGO.gif" />
+    <Content Include="images\elite-service.jpeg" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\favicon.png" />
     <Content Include="images\heating.jpg" />
+    <Content Include="images\home_advisor.jpg" />
     <Content Include="images\hvac-words.jpg" />
     <Content Include="images\patterns\45degreee_fabric.png" />
     <Content Include="images\patterns\45degreee_fabric_%402X.png" />
@@ -214,6 +215,7 @@
     <Content Include="images\sameday.jpg" />
     <Content Include="images\serving-area.jpg" />
     <Content Include="images\steve.jpg" />
+    <Content Include="images\top-rated.jpeg" />
     <Content Include="Scripts\all.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -243,7 +245,9 @@
     <None Include="Properties\PublishProfiles\andersonaire.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
