@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -161,6 +162,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="google1fa9456b231094bf.html" />
+    <Content Include="images\AAprochoi.jpg" />
     <Content Include="images\air-conditioning.jpg" />
     <Content Include="images\Anderson-Aire-LOGO-SMALL.jpg" />
     <Content Include="images\Anderson-Aire-LOGO.gif" />
